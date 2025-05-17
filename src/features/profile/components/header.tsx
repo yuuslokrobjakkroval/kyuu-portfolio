@@ -1,7 +1,7 @@
 import { SimpleTooltip } from "@/components/ui/tooltip";
 import { USER } from "@/data/user";
-import { FlipSentences } from "@/registry/flip-sentences";
 
+// import { FlipSentences } from "@/registry/flip-sentences";
 import { ChanhDaiAvatar } from "./chanhdai-avatar";
 import { ChanhDaiCover } from "./chanhdai-cover";
 import { VerifiedIcon } from "./verified-icon";
@@ -53,9 +53,9 @@ export function Header() {
               </SimpleTooltip>
             </h1>
 
-            <div className="h-12 border-t border-edge py-1 pl-4 sm:h-auto">
+            {/* <div className="h-12 border-t border-edge py-1 pl-4 sm:h-auto">
               <FlipSentences sentences={[USER.bio, ...USER.flipSentences]} />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -5,7 +5,7 @@ export const PROJECTS: Project[] = [
     id: "react-wheel-picker",
     title: "React Wheel Picker",
     time: "05.2025 — present",
-    link: "https://react-wheel-picker.chanhdai.com",
+    link: "https://react-wheel-picker.kyuu",
     tags: [
       "React",
       "TypeScript",
@@ -39,9 +39,9 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "portfolio-website",
-    title: "chanhdai.com",
+    title: "kyuu",
     time: "10.2023 — present",
-    link: "https://github.com/ncdai/chanhdai.com",
+    link: "https://github.com/ncdai/kyuu",
     tags: [
       "Open Source",
       "Next.js 15",
@@ -52,7 +52,7 @@ export const PROJECTS: Project[] = [
       "Vercel",
     ],
     description:
-      "chanhdai.com is my portfolio website, showcasing my work and experience as a Software Developer & UI/UX Designer.\n- Elegant & Minimalistic UI: Clean and modern design\n- Dark Mode: Supports light and dark themes for a better user experience\n- vCard Integration: Digital business card with contact details\n- SEO Optimization: JSON-LD schema, sitemap, robots\n- Email Protection: Obfuscation to prevent spam\n- Installable PWA\n- [Next.js 15](https://nextjs.org/): Latest React framework for optimized performance and scalability\n- [Tailwind CSS v4](https://tailwindcss.com/): Modern utility-first CSS framework for styling\n\nBlog Features:\n- MDX & Markdown support\n- [Syntax Highlighting](https://chanhdai.com/blog/writing-effect-inspired-by-apple) for better readability\n - [RSS Feed](https://chanhdai.com/rss) for easy content distribution\n- Dynamic OG Images for rich previews",
+      "kyuu is my portfolio website, showcasing my work and experience as a Software Developer & UI/UX Designer.\n- Elegant & Minimalistic UI: Clean and modern design\n- Dark Mode: Supports light and dark themes for a better user experience\n- vCard Integration: Digital business card with contact details\n- SEO Optimization: JSON-LD schema, sitemap, robots\n- Email Protection: Obfuscation to prevent spam\n- Installable PWA\n- [Next.js 15](https://nextjs.org/): Latest React framework for optimized performance and scalability\n- [Tailwind CSS v4](https://tailwindcss.com/): Modern utility-first CSS framework for styling\n\nBlog Features:\n- MDX & Markdown support\n- [Syntax Highlighting](https://kyuu/blog/writing-effect-inspired-by-apple) for better readability\n - [RSS Feed](https://kyuu/rss) for easy content distribution\n- Dynamic OG Images for rich previews",
     logo: "/images/project-logos/chanhdaidotcom.svg",
   },
   {

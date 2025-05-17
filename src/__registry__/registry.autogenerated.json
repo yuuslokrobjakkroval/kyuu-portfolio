@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "ncdai",
-  "homepage": "https://chanhdai.com",
+  "homepage": "https://kyuu",
   "items": [
     {
       "name": "cn",
@@ -26,7 +26,7 @@
         "motion"
       ],
       "registryDependencies": [
-        "https://chanhdai.com/r/cn.json"
+        "https://kyuu/r/cn.json"
       ],
       "files": [
         {
@@ -42,7 +42,7 @@
         "motion"
       ],
       "registryDependencies": [
-        "https://chanhdai.com/r/cn.json"
+        "https://kyuu/r/cn.json"
       ],
       "files": [
         {
@@ -58,7 +58,7 @@
         "motion"
       ],
       "registryDependencies": [
-        "https://chanhdai.com/r/cn.json"
+        "https://kyuu/r/cn.json"
       ],
       "files": [
         {
@@ -74,7 +74,7 @@
         "@ncdai/react-wheel-picker"
       ],
       "registryDependencies": [
-        "https://chanhdai.com/r/cn.json"
+        "https://kyuu/r/cn.json"
       ],
       "files": [
         {

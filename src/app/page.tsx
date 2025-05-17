@@ -1,22 +1,22 @@
 import dayjs from "dayjs";
 import { ProfilePage as PageSchema, WithContext } from "schema-dts";
 
-import { Confetti } from "@/components/confetti";
+// import { Confetti } from "@/components/confetti";
 import { Footer } from "@/components/footer";
 import { ScrollTop } from "@/components/scroll-top";
 import { SITE_INFO } from "@/config/site";
-import { VIETNAM_HOLIDAYS } from "@/config/site";
+// import { VIETNAM_HOLIDAYS } from "@/config/site";
 import { USER } from "@/data/user";
 import { About } from "@/features/profile/components/about";
 import { Awards } from "@/features/profile/components/awards";
-import { Blog } from "@/features/profile/components/blog";
+// import { Blog } from "@/features/profile/components/blog";
 import { Certifications } from "@/features/profile/components/certifications";
-import { Experiences } from "@/features/profile/components/experiences";
+// import { Experiences } from "@/features/profile/components/experiences";
 import { Header } from "@/features/profile/components/header";
 import { Logo } from "@/features/profile/components/logo";
 import { Overview } from "@/features/profile/components/overview";
-import { Projects } from "@/features/profile/components/projects";
-import { QuickActions } from "@/features/profile/components/quick-actions";
+// import { Projects } from "@/features/profile/components/projects";
+// import { QuickActions } from "@/features/profile/components/quick-actions";
 import { SocialLinks } from "@/features/profile/components/social-links";
 import { StickyHeader } from "@/features/profile/components/sticky-header";
 import { TeckStack } from "@/features/profile/components/teck-stack";
@@ -51,14 +51,14 @@ export default function Page() {
             <TeckStack />
             <Pattern />
 
-            <Blog />
+            {/* <Blog />
             <Pattern />
 
             <Experiences />
             <Pattern />
 
             <Projects />
-            <Pattern />
+            <Pattern /> */}
 
             <Awards />
             <Pattern />
@@ -74,9 +74,9 @@ export default function Page() {
         </div>
       </div>
 
-      <QuickActions />
+      {/* <QuickActions /> */}
 
-      <Confetti datesWithoutYear={[USER.dateOfBirth, ...VIETNAM_HOLIDAYS]} />
+      {/* <Confetti datesWithoutYear={[USER.dateOfBirth, ...VIETNAM_HOLIDAYS]} /> */}
 
       <ScrollTop className="bottom-[calc(4rem+env(safe-area-inset-bottom,0px))] lg:bottom-[calc(5.5rem+env(safe-area-inset-bottom,0px))]" />
     </>

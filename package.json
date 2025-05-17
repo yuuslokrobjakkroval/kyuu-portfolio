@@ -1,16 +1,16 @@
 {
-  "name": "chanhdai.com",
+  "name": "kyuu",
   "version": "0.1.0",
-  "description": "chanhdai.com is my portfolio website, showcasing my work and experience as a Software Developer & UI/UX Designer.",
+  "description": "kyuu is my portfolio website, showcasing my work and experience as a Software Developer & UI/UX Designer.",
   "author": {
     "name": "Nguyen Chanh Dai",
-    "email": "dai@chanhdai.com",
+    "email": "kyuu@gmail.com",
     "url": "https://github.com/ncdai"
   },
   "contributors": [
     {
       "name": "Nguyen Chanh Dai",
-      "email": "dai@chanhdai.com",
+      "email": "kyuu@gmail.com",
       "url": "https://github.com/ncdai"
     }
   ],

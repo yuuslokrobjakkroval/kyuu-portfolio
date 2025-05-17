@@ -4,7 +4,7 @@ export const examples: Registry["items"] = [
   {
     name: "apple-hello-effect-demo",
     type: "registry:example",
-    registryDependencies: ["https://chanhdai.com/r/apple-hello-effect.json"],
+    registryDependencies: ["https://kyuu/r/apple-hello-effect.json"],
     files: [
       {
         path: "examples/apple-hello-effect-demo.tsx",
@@ -15,7 +15,7 @@ export const examples: Registry["items"] = [
   {
     name: "theme-switcher-demo",
     type: "registry:example",
-    registryDependencies: ["https://chanhdai.com/r/theme-switcher.json"],
+    registryDependencies: ["https://kyuu/r/theme-switcher.json"],
     files: [
       {
         path: "examples/theme-switcher-demo.tsx",
@@ -26,7 +26,7 @@ export const examples: Registry["items"] = [
   {
     name: "wheel-picker-demo",
     type: "registry:example",
-    registryDependencies: ["https://chanhdai.com/r/wheel-picker.json"],
+    registryDependencies: ["https://kyuu/r/wheel-picker.json"],
     files: [
       {
         path: "examples/wheel-picker-demo.tsx",
@@ -37,7 +37,7 @@ export const examples: Registry["items"] = [
   {
     name: "wheel-picker-form-demo",
     type: "registry:example",
-    registryDependencies: ["https://chanhdai.com/r/wheel-picker.json", "form"],
+    registryDependencies: ["https://kyuu/r/wheel-picker.json", "form"],
     files: [
       {
         path: "examples/wheel-picker-form-demo.tsx",

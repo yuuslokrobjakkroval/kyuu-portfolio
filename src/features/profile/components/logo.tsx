@@ -1,9 +1,9 @@
-import { ArrowRightIcon } from "lucide-react";
-import Link from "next/link";
+// import { ArrowRightIcon } from "lucide-react";
+// import Link from "next/link";
 
-import { ChanhDaiMark } from "@/components/chanhdai-mark";
-import { ChanhDaiWordmark } from "@/components/chanhdai-wordmark";
-import { Button } from "@/components/ui/button";
+// import { ChanhDaiMark } from "@/components/chanhdai-mark";
+// import { ChanhDaiWordmark } from "@/components/chanhdai-wordmark";
+// import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/cn";
 
 import { Panel, PanelHeader, PanelTitle } from "./panel";
@@ -30,7 +30,7 @@ export function Logo() {
           </div>
 
           <div className="screen-line-after flex items-center justify-center pr-8 after:z-1">
-            <ChanhDaiMark className="h-8 w-auto sm:h-12" />
+            {/* <ChanhDaiMark className="h-8 w-auto sm:h-12" /> */}K
           </div>
 
           <div className="flex h-28 items-center justify-center border-r border-edge bg-background">
@@ -40,19 +40,20 @@ export function Logo() {
           </div>
 
           <div className="screen-line-after flex items-center justify-center pr-8 after:z-1">
-            <ChanhDaiWordmark className="h-6 w-auto sm:h-10" />
+            {/* <ChanhDaiWordmark className="h-6 w-auto sm:h-10" /> */}
+            KY YUU
           </div>
         </div>
       </div>
 
-      <div className="flex h-12 items-center justify-center pb-px">
+      {/* <div className="flex h-12 items-center justify-center pb-px">
         <Button variant="secondary" asChild>
           <Link href="/blog/chanhdai-brand">
-            ChanhDai Brand
+            Contact
             <ArrowRightIcon />
           </Link>
         </Button>
-      </div>
+      </div> */}
     </Panel>
   );
 }

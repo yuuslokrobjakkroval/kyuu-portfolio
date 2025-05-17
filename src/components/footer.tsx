@@ -1,15 +1,15 @@
-import { SOURCE_CODE_GITHUB_URL } from "@/config/site";
+// import { SOURCE_CODE_GITHUB_URL } from "@/config/site";
 import { USER } from "@/data/user";
 import { urlToName } from "@/utils/url";
 
 export function Footer() {
   return (
-    <footer className="screen-line-before border-x border-edge pt-4 pb-[env(safe-area-inset-bottom,0px)]">
+    <footer className="screen-line-before border-x border-edge pt-2 pb-[env(safe-area-inset-bottom,0px)]">
       <p className="mb-1 text-center font-mono text-sm text-balance text-muted-foreground">
         Inspired by tailwindcss.com.
       </p>
 
-      <p className="mb-4 text-center font-mono text-sm text-balance text-muted-foreground">
+      {/* <p className="mb-4 text-center font-mono text-sm text-balance text-muted-foreground">
         Built by{" "}
         <a
           className="link"
@@ -29,11 +29,11 @@ export function Footer() {
           GitHub
         </a>
         .
-      </p>
+      </p> */}
 
-      <div className="mb-5 flex justify-center">
+      {/* <div className="mb-5 flex justify-center">
         <a
-          href="https://www.dmca.com/Protection/Status.aspx?ID=85a452ca-06aa-4352-bfeb-7cb563dbd2b9&refurl=https://chanhdai.com/"
+          href="https://www.dmca.com/Protection/Status.aspx?ID=85a452ca-06aa-4352-bfeb-7cb563dbd2b9&refurl=https://kyuu/"
           title="DMCA.com Protection Status"
           aria-label="DMCA.com Protection Status"
           target="_blank"
@@ -52,7 +52,7 @@ export function Footer() {
             />
           </svg>
         </a>
-      </div>
+      </div> */}
 
       <div className="screen-line-before grid grid-cols-2 gap-1 p-4 sm:grid-cols-4">
         {USER.otherWebsites.map((website) => {
