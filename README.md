@@ -4,7 +4,7 @@ kyuu is my minimal portfolio website, showcasing my work and experience as a Sof
 
 This is a continuously evolving side project where I experiment with new technologies and keep it updated with the latest advancements in web development.
 
-Check out the live site: [kyuu](https://kyuu)
+Check out the live site: [kyuu](https://github.com/yuuslokrobjakkroval/kyuu-portfolio)
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="./public/screenshot-desktop-dark.webp">
