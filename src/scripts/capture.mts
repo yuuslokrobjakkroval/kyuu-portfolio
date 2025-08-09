@@ -4,7 +4,7 @@ import puppeteer, { Browser } from "puppeteer-core";
 
 const executablePath =
   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
-const url = "http://localhost:1408";
+const url = "http://localhost:2707";
 const outputDir = path.join(process.cwd(), "public");
 
 const SIZE = {

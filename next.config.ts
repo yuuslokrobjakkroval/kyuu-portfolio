@@ -2,8 +2,8 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  transpilePackages: ["next-mdx-remote"],
-  allowedDevOrigins: ["chanhdai-macbook.local"],
+  // transpilePackages: ["next-mdx-remote"],
+  // allowedDevOrigins: ["chanhdai-macbook.local"],
   // async headers() {
   //   return [
   //     {
