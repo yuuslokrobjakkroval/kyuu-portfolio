@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 
+import { Analytics } from "@vercel/analytics/next";
 import { Metadata, Viewport } from "next";
 import { WebSite, WithContext } from "schema-dts";
 
@@ -114,7 +115,10 @@ export default function RootLayout({
       </head>
 
       <body>
-        <Providers>{children}</Providers>
+        <Providers>
+          {children}
+          <Analytics />
+        </Providers>
       </body>
     </html>
   );
