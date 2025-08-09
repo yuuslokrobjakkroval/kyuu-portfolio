@@ -17,6 +17,7 @@ export const USER = {
   email: "dGhvZXVybnJvdGhhbmFrQGdtYWlsLmNvbQ==", // base64 encoded
   // email: "dai[at]chanhdai[dot]com",
   website: "https://peachygang.xyz",
+  pronouns: "he/him",
   otherWebsites: [
     "https://peachygang.xyz",
     "https://kyuu.peachygang.xyz",
