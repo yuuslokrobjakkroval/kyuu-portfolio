@@ -13,13 +13,13 @@ export const USER = {
   address:
     "1b Street 60R, Sangkat Boeung Keng Kang Ti Muoy, Khan Chamkarmon, Phnom Penh, Cambodia",
   phoneNumber: "Kzg1NSA5NjU2NDQyMTg=", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
-  email: "a3l1dUBnbWFpbC5jb20=", // base64 encoded
+  email: "dGhvZXVybnJvdGhhbmFrQGdtYWlsLmNvbQ==", // base64 encoded
   // email: "dai[at]chanhdai[dot]com",
-  website: "https://kyuu.com.kh",
+  website: "https://peachygang.xyz",
   otherWebsites: [
     "https://peachygang.xyz",
     "https://kyuu.peachygang.xyz",
-    "https://docs.peachygang.xyz",
+    "https://doc.peachygang.xyz",
     // "https://dai.so",
     // "https://d.io.vn",
     // "https://d.id.vn",
