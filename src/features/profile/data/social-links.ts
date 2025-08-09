@@ -2,10 +2,10 @@ import { SocialLink } from "../types/social-links";
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    icon: "/images/link-icons/linkedin.webp",
-    title: "LinkedIn",
-    description: "rothanakkk",
-    href: "https://www.linkedin.com/in/rothanakkk",
+    icon: "/images/link-icons/discord.png",
+    title: "Discord",
+    description: "iitzkyuu",
+    href: "https://discord.com/users/966688007493140591",
   },
   {
     icon: "/images/link-icons/github.webp",
@@ -25,22 +25,16 @@ export const SOCIAL_LINKS: SocialLink[] = [
     description: "@rothanakkkk",
     href: "https://x.com/rothanakkkk",
   },
-  // {
-  //   icon: "/images/link-icons/zalo.webp",
-  //   title: "Zalo",
-  //   description: "Quaric",
-  //   href: "https://zalo.me/2353934240045322830",
-  // },
-  // {
-  //   icon: "/images/link-icons/telegram.webp",
-  //   title: "Telegram",
-  //   description: "@ncdai",
-  //   href: "https://t.me/ncdai",
-  // },
-  // {
-  //   icon: "/images/link-icons/youtube.webp",
-  //   title: "YouTube",
-  //   description: "@ncdai",
-  //   href: "https://www.youtube.com/@ncdai",
-  // },
+  {
+    icon: "/images/link-icons/telegram.webp",
+    title: "Telegram",
+    description: "@yuuslokrobjakroval",
+    href: "https://t.me/yuuslokrobjakroval",
+  },
+  {
+    icon: "/images/link-icons/youtube.webp",
+    title: "YouTube",
+    description: "@peachyganggg",
+    href: "https://www.youtube.com/@peachyganggg",
+  },
 ];
