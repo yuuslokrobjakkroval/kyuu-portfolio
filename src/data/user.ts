@@ -2,7 +2,7 @@ export const USER = {
   firstName: "Rothanak",
   lastName: "Thoeurn",
   displayName: "KYUU",
-  username: "ncdai",
+  username: "yuuslokrobjakkroval",
   gender: "male",
   bio: "Creating with code, driven by passion.",
   flipSentences: [
@@ -16,7 +16,7 @@ export const USER = {
   phoneNumber: "Kzg1NSA5NjU2NDQyMTg=", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
   email: "dGhvZXVybnJvdGhhbmFrQGdtYWlsLmNvbQ==", // base64 encoded
   // email: "dai[at]chanhdai[dot]com",
-  website: "https://peachygang.xyz",
+  website: "https://peachyganggg.com",
   pronouns: "he/him",
   otherWebsites: [
     "https://peachygang.xyz",
@@ -44,7 +44,7 @@ export const USER = {
     {
       title: "Founder",
       company: "PEACHY",
-      website: "https://peachygang.xyz",
+      website: "https://peachyganggg.com",
     },
   ],
   about: `
