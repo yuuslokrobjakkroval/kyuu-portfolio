@@ -2,7 +2,7 @@ import { USER } from "@/data/user";
 
 export const SITE_INFO = {
   name: USER.displayName,
-  url: process.env.APP_URL || "https://kyuu.peachygang.xyz",
+  url: process.env.APP_URL || "https://kyuu.peachyganggg.com",
   ogImage: USER.ogImage,
   description: USER.bio,
   keywords: USER.keywords,
