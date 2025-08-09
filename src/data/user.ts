@@ -7,6 +7,7 @@ export const USER = {
   bio: "Creating with code, driven by passion.",
   flipSentences: [
     "Software Developer",
+    "Frontend Developer",
     "UI/UX Designer",
     "Open Source Contributor",
   ],
@@ -31,11 +32,11 @@ export const USER = {
     // "https://ncdai.net",
     // "https://dai.is-a.dev",
   ],
-  dateOfBirth: "2000-08-14", // YYYY-MM-DD
-  jobTitle: "Software Developer & UI/UX Designer",
+  dateOfBirth: "2001-03-20",
+  jobTitle: "Frontend Developer",
   jobs: [
     {
-      title: "Senior Frontend Developer & UI Design Lead",
+      title: "Frontend Developer",
       company: "yuuslokrobjakkroval",
       website: "https://github.com/yuuslokrobjakkroval",
     },
@@ -54,9 +55,9 @@ Beyond software development, I have a growing interest in digital products and o
 
 Let's connect and build something amazing together!
 `,
-  avatar: "/images/thoeurn-rothanak-avatar.jpeg", // Replace with your actual avatar path
-  ogImage: "/screenshot-og-image-dark.png", // Update if needed
+  avatar: "/images/avatar-ghibli.jpeg",
+  ogImage: "/images/screenshot.PNG",
   keywords:
-    "thoeurnrothanak, rothanak, rothanaak, roth, developer cambodia, software engineer cambodia, thoeurn rothanaak, roto, rothanak.dev",
-  dateCreated: "2025-05-17", // Updated to today
+    "thoeurnrothanak, rothanak, rothanaak, roth, developer cambodia, software engineer cambodia, thoeurn rothanaak, roto, rothanak.dev kyuu, peachygang, peachy",
+  dateCreated: "2025-08-08",
 };

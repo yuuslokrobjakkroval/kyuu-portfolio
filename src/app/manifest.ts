@@ -37,31 +37,31 @@ export default function manifest(): MetadataRoute.Manifest {
     start_url: "/?utm_source=pwa",
     display: "standalone",
     scope: "/",
-    screenshots: [
-      {
-        src: "/screenshot-mobile-dark.webp",
-        type: "image/webp",
-        sizes: "440x956",
-        form_factor: "narrow",
-      },
-      {
-        src: "/screenshot-mobile-light.webp",
-        type: "image/webp",
-        sizes: "440x956",
-        form_factor: "narrow",
-      },
-      {
-        src: "/screenshot-desktop-dark.webp",
-        type: "image/webp",
-        sizes: "1920x1080",
-        form_factor: "wide",
-      },
-      {
-        src: "/screenshot-desktop-light.webp",
-        type: "image/webp",
-        sizes: "1920x1080",
-        form_factor: "wide",
-      },
-    ],
+    // screenshots: [
+    //   {
+    //     src: "/screenshot-mobile-dark.webp",
+    //     type: "image/webp",
+    //     sizes: "440x956",
+    //     form_factor: "narrow",
+    //   },
+    //   {
+    //     src: "/screenshot-mobile-light.webp",
+    //     type: "image/webp",
+    //     sizes: "440x956",
+    //     form_factor: "narrow",
+    //   },
+    //   {
+    //     src: "/screenshot-desktop-dark.webp",
+    //     type: "image/webp",
+    //     sizes: "1920x1080",
+    //     form_factor: "wide",
+    //   },
+    //   {
+    //     src: "/screenshot-desktop-light.webp",
+    //     type: "image/webp",
+    //     sizes: "1920x1080",
+    //     form_factor: "wide",
+    //   },
+    // ],
   };
 }
