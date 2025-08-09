@@ -17,7 +17,9 @@ export const USER = {
   // email: "dai[at]chanhdai[dot]com",
   website: "https://kyuu.com.kh",
   otherWebsites: [
-    "https://peachy-gang-dashboard.vercel.app",
+    "https://peachygang.xyz",
+    "https://kyuu.peachygang.xyz",
+    "https://docs.peachygang.xyz",
     // "https://dai.so",
     // "https://d.io.vn",
     // "https://d.id.vn",
@@ -40,7 +42,7 @@ export const USER = {
     {
       title: "Founder",
       company: "PEACHY",
-      website: "https://peachy-gang-dashboard.vercel.app",
+      website: "https://peachygang.xyz",
     },
   ],
   about: `

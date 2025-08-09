@@ -11,7 +11,7 @@ export function ChanhDaiCover() {
         "bg-black/0.75 bg-[radial-gradient(var(--pattern-foreground)_1px,transparent_0)] bg-size-[10px_10px] bg-center [--pattern-foreground:var(--color-zinc-950)]/5 dark:bg-white/0.75 dark:[--pattern-foreground:var(--color-white)]/5"
       )}
     >
-      <ChanhDaiMark className="h-1/4 w-auto" />
+      <ChanhDaiMark />
     </div>
   );
 }

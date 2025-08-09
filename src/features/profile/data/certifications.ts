@@ -7,7 +7,7 @@ export const CERTIFICATIONS: Certification[] = [
     issuerLogo: "/images/companies/vercel.webp",
     issueDate: "2025-03-22",
     credentialID: "prj_xSTStPaVz3hhIAXVj5QO1gPRO0fm",
-    credentialURL: "https://peachy-dashboard.vercel.app/en/auth/signin",
+    credentialURL: "https://dashboard.peachygang.xyz/en/auth/signin",
   },
   {
     title: "PEACHY GANG ( Shadcn UI )",
@@ -15,6 +15,6 @@ export const CERTIFICATIONS: Certification[] = [
     issuerLogo: "/images/companies/vercel.webp",
     issueDate: "2025-05-11",
     credentialID: "prj_xSTStPaVz3hhIAXVj5QO1gPRO0fm",
-    credentialURL: "https://peachy-gang-dashboard.vercel.app/en",
+    credentialURL: "https://peachygang.xyz/en",
   },
 ];

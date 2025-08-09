@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import ImgAvatar from "@/../public/images/chanhdai-avatar-ghibli.webp";
+import ImgAvatar from "@/../public/images/avatar-ghibli.jpeg";
 import { USER } from "@/data/user";
 
 export function ChanhDaiAvatar({
