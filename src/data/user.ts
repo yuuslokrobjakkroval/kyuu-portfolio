@@ -19,9 +19,9 @@ export const USER = {
   website: "https://peachyganggg.com",
   pronouns: "he/him",
   otherWebsites: [
-    "https://peachygang.xyz",
-    "https://kyuu.peachygang.xyz",
-    "https://doc.peachygang.xyz",
+    "https://peachyganggg.com",
+    "https://kyuu.peachyganggg.com",
+    "https://docs.peachyganggg.com",
     // "https://dai.so",
     // "https://d.io.vn",
     // "https://d.id.vn",
