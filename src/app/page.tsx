@@ -8,7 +8,7 @@ import { SITE_INFO } from "@/config/site";
 // import { VIETNAM_HOLIDAYS } from "@/config/site";
 import { USER } from "@/data/user";
 import { About } from "@/features/profile/components/about";
-import { Awards } from "@/features/profile/components/awards";
+// import { Awards } from "@/features/profile/components/awards";
 // import { Blog } from "@/features/profile/components/blog";
 import { Certifications } from "@/features/profile/components/certifications";
 // import { Experiences } from "@/features/profile/components/experiences";
@@ -60,7 +60,7 @@ export default function Page() {
             <Projects />
             <Pattern /> */}
 
-            <Awards />
+            {/* <Awards /> */}
             <Pattern />
 
             <Certifications />
