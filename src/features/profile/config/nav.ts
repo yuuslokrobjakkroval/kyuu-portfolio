@@ -15,10 +15,10 @@ export const NAV_LINKS = [
   //   title: "Projects",
   //   href: "#projects",
   // },
-  {
-    title: "Awards",
-    href: "#awards",
-  },
+  // {
+  //   title: "Awards",
+  //   href: "#awards",
+  // },
   {
     title: "Certs",
     href: "#certs",
