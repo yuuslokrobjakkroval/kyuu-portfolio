@@ -4,8 +4,9 @@ import { AppProgressProvider } from "@bprogress/next";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Provider as JotaiProvider } from "jotai";
-import { ThemeProvider } from "next-themes";
 
+import { MetaThemeColor } from "@/components/meta-theme-color";
+import { ThemeProvider } from "@/components/theme-provider";
 import { Toaster } from "@/components/ui/sonner";
 
 import { PostHogProvider } from "./posthog-provider";
@@ -21,6 +22,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
         defaultTheme="system"
         attribute="class"
       >
+        <MetaThemeColor />
         <AppProgressProvider
           color="#2563eb"
           height="2px"

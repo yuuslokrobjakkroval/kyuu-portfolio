@@ -3,7 +3,6 @@ import { ChevronLeftIcon } from "lucide-react";
 import { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import Script from "next/script";
 import { BlogPosting as PageSchema, WithContext } from "schema-dts";
 
 import { MDX } from "@/components/mdx";
@@ -102,9 +101,9 @@ export default async function Page({
 
   return (
     <>
-      <Script
+      <template
         id={`blog-${post.slug}-json-ld`}
-        type="application/ld+json"
+        data-type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
       />
 

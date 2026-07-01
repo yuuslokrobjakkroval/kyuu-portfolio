@@ -1,5 +1,4 @@
 import dayjs from "dayjs";
-import Script from "next/script";
 import { ProfilePage as PageSchema, WithContext } from "schema-dts";
 
 // import { Confetti } from "@/components/confetti";
@@ -28,9 +27,9 @@ export default function Page() {
 
   return (
     <>
-      <Script
+      <template
         id="profile-json-ld"
-        type="application/ld+json"
+        data-type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
       />
 

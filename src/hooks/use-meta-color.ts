@@ -1,6 +1,6 @@
-import { useTheme } from "next-themes";
 import * as React from "react";
 
+import { useTheme } from "@/components/theme-provider";
 import { META_THEME_COLORS } from "@/config/site";
 
 export function useMetaColor() {

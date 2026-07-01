@@ -2,7 +2,6 @@ import "@/styles/globals.css";
 
 import { Analytics } from "@vercel/analytics/next";
 import { Metadata, Viewport } from "next";
-import Script from "next/script";
 import { WebSite, WithContext } from "schema-dts";
 
 import { Providers } from "@/components/providers";
@@ -19,6 +18,35 @@ function getWebSiteJsonLd(): WithContext<WebSite> {
     alternateName: [USER.username],
   };
 }
+
+const THEME_INITIALIZATION_SCRIPT = `
+(function() {
+  try {
+    var storageKey = "chanhdai.theme";
+    var theme = localStorage.getItem(storageKey) || "system";
+    var resolvedTheme = theme === "system"
+      ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
+      : theme;
+    var root = document.documentElement;
+    var metaThemeColor = document.querySelector('meta[name="theme-color"]');
+
+    if (resolvedTheme !== "light" && resolvedTheme !== "dark") {
+      resolvedTheme = "light";
+    }
+
+    root.classList.remove("light", "dark");
+    root.classList.add(resolvedTheme);
+    root.style.colorScheme = resolvedTheme;
+
+    if (metaThemeColor) {
+      metaThemeColor.setAttribute(
+        "content",
+        resolvedTheme === "dark" ? "${META_THEME_COLORS.dark}" : "${META_THEME_COLORS.light}"
+      );
+    }
+  } catch (error) {}
+})();
+`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_INFO.url),
@@ -98,23 +126,13 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
-        {/* Thanks @shadcn-ui */}
-        <Script
-          id="theme-color-script"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              try {
-                if (localStorage['chanhdai.theme'] === 'dark' || ((!('chanhdai.theme' in localStorage) || localStorage['chanhdai.theme'] === 'system') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                  document.querySelector('meta[name="theme-color"]').setAttribute('content', '${META_THEME_COLORS.dark}')
-                }
-              } catch (_) {}
-            `,
-          }}
+        <script
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{ __html: THEME_INITIALIZATION_SCRIPT }}
         />
-        <Script
+        <template
           id="website-json-ld"
-          type="application/ld+json"
+          data-type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(getWebSiteJsonLd()),
           }}
