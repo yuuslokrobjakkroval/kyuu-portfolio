@@ -2,6 +2,7 @@ import "@/styles/globals.css";
 
 import { Analytics } from "@vercel/analytics/next";
 import { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { WebSite, WithContext } from "schema-dts";
 
 import { Providers } from "@/components/providers";
@@ -98,7 +99,9 @@ export default function RootLayout({
     >
       <head>
         {/* Thanks @shadcn-ui */}
-        <script
+        <Script
+          id="theme-color-script"
+          strategy="beforeInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               try {
@@ -109,9 +112,13 @@ export default function RootLayout({
             `,
           }}
         />
-        <script type="application/ld+json">
-          {JSON.stringify(getWebSiteJsonLd())}
-        </script>
+        <Script
+          id="website-json-ld"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(getWebSiteJsonLd()),
+          }}
+        />
       </head>
 
       <body>

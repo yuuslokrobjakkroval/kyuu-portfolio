@@ -2,6 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
+  images: {
+    qualities: [100, 75],
+  },
   // transpilePackages: ["next-mdx-remote"],
   // allowedDevOrigins: ["chanhdai-macbook.local"],
   // async headers() {

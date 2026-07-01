@@ -1,4 +1,5 @@
 import dayjs from "dayjs";
+import Script from "next/script";
 import { ProfilePage as PageSchema, WithContext } from "schema-dts";
 
 // import { Confetti } from "@/components/confetti";
@@ -27,9 +28,11 @@ export default function Page() {
 
   return (
     <>
-      <script type="application/ld+json">
-        {JSON.stringify(websiteJsonLd)}
-      </script>
+      <Script
+        id="profile-json-ld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
 
       <StickyHeader />
 
@@ -88,7 +91,7 @@ function getPageJsonLd(): WithContext<PageSchema> {
     "@context": "https://schema.org",
     "@type": "ProfilePage",
     dateCreated: dayjs(USER.dateCreated).toISOString(),
-    dateModified: dayjs().toISOString(),
+    dateModified: dayjs(USER.dateCreated).toISOString(),
     mainEntity: {
       "@type": "Person",
       name: USER.displayName,
