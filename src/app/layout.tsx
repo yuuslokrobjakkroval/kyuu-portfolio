@@ -19,35 +19,6 @@ function getWebSiteJsonLd(): WithContext<WebSite> {
   };
 }
 
-const THEME_INITIALIZATION_SCRIPT = `
-(function() {
-  try {
-    var storageKey = "chanhdai.theme";
-    var theme = localStorage.getItem(storageKey) || "system";
-    var resolvedTheme = theme === "system"
-      ? (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light")
-      : theme;
-    var root = document.documentElement;
-    var metaThemeColor = document.querySelector('meta[name="theme-color"]');
-
-    if (resolvedTheme !== "light" && resolvedTheme !== "dark") {
-      resolvedTheme = "light";
-    }
-
-    root.classList.remove("light", "dark");
-    root.classList.add(resolvedTheme);
-    root.style.colorScheme = resolvedTheme;
-
-    if (metaThemeColor) {
-      metaThemeColor.setAttribute(
-        "content",
-        resolvedTheme === "dark" ? "${META_THEME_COLORS.dark}" : "${META_THEME_COLORS.light}"
-      );
-    }
-  } catch (error) {}
-})();
-`;
-
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_INFO.url),
   alternates: {
@@ -126,10 +97,6 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <head>
-        <script
-          suppressHydrationWarning
-          dangerouslySetInnerHTML={{ __html: THEME_INITIALIZATION_SCRIPT }}
-        />
         <template
           id="website-json-ld"
           data-type="application/ld+json"

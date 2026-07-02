@@ -24,31 +24,32 @@ export function CollapsibleList<T>({
   keyExtractor?: (item: T) => string;
   renderItem: (item: T) => React.ReactNode;
 }) {
+  const visibleItems = items.slice(0, max);
+  const hiddenItems = items.slice(max);
+
+  const renderItems = (itemsToRender: T[], startIndex = 0) =>
+    itemsToRender.map((award, index) => (
+      <Slot
+        key={
+          typeof keyExtractor === "function"
+            ? keyExtractor(award)
+            : startIndex + index
+        }
+        className="border-b border-edge"
+      >
+        {renderItem(award)}
+      </Slot>
+    ));
+
+  if (hiddenItems.length === 0) {
+    return <>{renderItems(visibleItems)}</>;
+  }
+
   return (
     <Collapsible>
-      {items.slice(0, max).map((award, index) => (
-        <Slot
-          key={typeof keyExtractor === "function" ? keyExtractor(award) : index}
-          className="border-b border-edge"
-        >
-          {renderItem(award)}
-        </Slot>
-      ))}
+      {renderItems(visibleItems)}
 
-      <CollapsibleContent>
-        {items.slice(max).map((award, index) => (
-          <Slot
-            key={
-              typeof keyExtractor === "function"
-                ? keyExtractor(award)
-                : max + index
-            }
-            className="border-b border-edge"
-          >
-            {renderItem(award)}
-          </Slot>
-        ))}
-      </CollapsibleContent>
+      <CollapsibleContent>{renderItems(hiddenItems, max)}</CollapsibleContent>
 
       <div className="flex h-12 items-center justify-center pb-px">
         <CollapsibleTrigger asChild>

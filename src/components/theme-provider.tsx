@@ -64,9 +64,7 @@ function getStoredTheme(storageKey: string, defaultTheme: Theme): Theme {
 function disableTransitions() {
   const style = document.createElement("style");
   style.appendChild(
-    document.createTextNode(
-      "*,*::before,*::after{transition:none!important}"
-    )
+    document.createTextNode("*,*::before,*::after{transition:none!important}")
   );
   document.head.appendChild(style);
 
@@ -87,14 +85,14 @@ export function ThemeProvider({
   storageKey = "theme",
   attribute = "class",
 }: ThemeProviderProps) {
-  const [theme, setThemeState] = React.useState<Theme>(() =>
-    getStoredTheme(storageKey, defaultTheme)
-  );
-  const [systemTheme, setSystemTheme] =
-    React.useState<ResolvedTheme>(getSystemTheme);
+  const [theme, setThemeState] = React.useState<Theme>(defaultTheme);
+  const [systemTheme, setSystemTheme] = React.useState<ResolvedTheme>("light");
+  const [mounted, setMounted] = React.useState(false);
 
   React.useEffect(() => {
     setThemeState(getStoredTheme(storageKey, defaultTheme));
+    setSystemTheme(getSystemTheme());
+    setMounted(true);
   }, [defaultTheme, storageKey]);
 
   React.useEffect(() => {
@@ -111,6 +109,10 @@ export function ThemeProvider({
     theme === "system" && enableSystem ? systemTheme : (theme as ResolvedTheme);
 
   React.useEffect(() => {
+    if (!mounted) {
+      return;
+    }
+
     if (attribute !== "class") {
       return;
     }
@@ -132,6 +134,7 @@ export function ThemeProvider({
     attribute,
     disableTransitionOnChange,
     enableColorScheme,
+    mounted,
     resolvedTheme,
   ]);
 
