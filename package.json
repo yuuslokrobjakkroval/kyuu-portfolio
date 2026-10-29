@@ -16,8 +16,14 @@
   ],
   "license": "MIT",
   "scripts": {
+    "predev": "node scripts/build-content.mjs",
+    "prebuild": "node scripts/build-content.mjs",
+    "prebuild:turbo": "node scripts/build-content.mjs",
     "dev": "next dev -p 1408 --turbopack",
-    "build": "next build",
+    "build": "next build --webpack",
+    "build:cloudflare": "opennextjs-cloudflare build",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "preview:cloudflare": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "build:turbo": "next build --turbopack",
     "start": "next start",
     "lint": "next lint",
@@ -64,6 +70,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.0",
+    "@opennextjs/cloudflare": "1.20.0",
     "@tailwindcss/postcss": "^4.1.6",
     "@tailwindcss/typography": "^0.5.16",
     "@types/he": "^1.2.3",
@@ -91,7 +98,8 @@
     "tw-animate-css": "^1.2.9",
     "typescript": "5.7.3",
     "unist-builder": "3.0.0",
-    "unist-util-visit": "^5.0.0"
+    "unist-util-visit": "^5.0.0",
+    "wrangler": "4.155.0"
   },
   "resolutions": {
     "@types/react": "19.1.4",

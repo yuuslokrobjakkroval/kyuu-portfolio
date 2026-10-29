@@ -45,6 +45,25 @@ Tailwind CSS v4.0 is designed for and tested on modern browsers, and the core fu
 
 Please refer to the [Development Guide](./DEVELOPMENT.md) for more details.
 
+## Cloudflare Workers deployment
+
+Install dependencies with `npm ci`, then run `npm run deploy` to build with
+OpenNext and deploy to the `kyuu-portfolio` Worker. For local Workers preview,
+run `npm run preview:cloudflare`. Authenticate locally with `npx wrangler login`
+before deploying.
+
+For Cloudflare Workers Builds, use `npm run build:cloudflare` as the build command
+and `npx opennextjs-cloudflare deploy` as the deploy command. The build command
+must generate `.open-next`, rather than only the standard `.next` output.
+
+Keep `name` and the `WORKER_SELF_REFERENCE` service in `wrangler.jsonc` set to
+the same Worker name. A mismatch causes Cloudflare API error 10143.
+
+Builds bundle blog content and social-image fonts from `src/generated`, created
+automatically by `scripts/build-content.mjs`, so these routes do not depend on
+the server filesystem. Prerendered pages use the Workers static assets cache;
+content updates require a new deployment.
+
 ## License
 
 Licensed under the [MIT license](./LICENSE).
